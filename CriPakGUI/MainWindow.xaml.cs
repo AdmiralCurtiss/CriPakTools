@@ -193,7 +193,7 @@ namespace CriPakGUI
                                                                 entries[i].FileSize,
                                                                 ((float)i / (float)entries.Count) * 100f);
                     string dstpath = outDir + "/" + currentName;
-                    dstpath = Tools.GetSafePath(dstpath);
+                    //dstpath = Tools.GetSafePath(dstpath);
                     string dstdir = System.IO.Path.GetDirectoryName(dstpath);
                     if (!Directory.Exists(dstdir))
                     {

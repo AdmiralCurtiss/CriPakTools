@@ -226,7 +226,7 @@ namespace CriPakTools
                     }
 
                     string dstpath = outDir + "/" + ((entries[i].DirName != null) ? entries[i].DirName + "/" : "") + entries[i].FileName.ToString();
-                    dstpath = Tools.GetSafePath(dstpath);
+                    //dstpath = Tools.GetSafePath(dstpath);
                     string dstdir = Path.GetDirectoryName(dstpath);
                     if (!Directory.Exists(dstdir))
                     {
